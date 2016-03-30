@@ -103,7 +103,7 @@
 		</p>
 		<p>
 			
-			<a href="contactus.php">Go To Next Page</a>
+			<a href="contactus.php">Contact Us</a>
 			
 		</p>
 		<div>
