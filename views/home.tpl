@@ -101,7 +101,11 @@
 			Check back often for promotional deals and new stock!
 			
 		</p>
-		
+		<p>
+			
+			<a href="contactus.php">Go To Next Page</a>
+			
+		</p>
 		<div>
 			
 
