@@ -3,6 +3,6 @@
 ini_set('display_errors', 'On');
 error_reporting(E_ALL);
 
-$site_title="Poly Good Company Limited";
+$site_title="~~~ Poly Good Company Limited ~~~";
 
 ?>
