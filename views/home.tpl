@@ -30,7 +30,7 @@
 	font-weight:bold;
   }
   a.outofstock {
-   color: white;
+   color: #666;
   }
 	
 	
