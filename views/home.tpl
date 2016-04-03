@@ -23,10 +23,11 @@
     margin-top: 5px;
     width: 252px;
   }
-    .outofstock {
+  .outofstock {
   	background-color: red;
   	pointer-events: none;
    	cursor: default;
+	font-weight:bold;
   }
   a.outofstock {
    color: white;
