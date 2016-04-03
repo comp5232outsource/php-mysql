@@ -10,10 +10,4 @@ The above button will deploy this application to your Bluemix by reading the man
 
 Add no message
 
-11111
-wahaha
-
-oh no
-
-17:56
-17:59
+First Step
