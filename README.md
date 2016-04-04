@@ -8,5 +8,3 @@ This simple PHP application demonstrates how to connect to a MySQL service on Bl
 Deploy branch m_proj001 button
 
 The above button will deploy this application to your Bluemix by reading the manifest.yml file. This file describes the application to Bluemix, and also declares any necessary services (mysql).
-
-Test Conflict
