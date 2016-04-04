@@ -8,6 +8,7 @@
    <link href="/static/bootstrap.min.css" rel="stylesheet" media="screen">
    <link href="/static/bootstrap-responsive.css" rel="stylesheet">
    <link href="/static/bootstrap.css" rel="stylesheet">
+   <link href="/static/ourStyle.css" rel="stylesheet">
 
   <style type="text/css">
 	body {
