@@ -42,7 +42,9 @@
   
  		<p>
 		
-			Welcome to <?php echo $site_title; ?>! If you would like to purchase an item, please <a href="mailto:webmaster@mycoolstore.com">contact us</a> and we will be happy to help.
+			Welcome to <?php echo $site_title; ?>!
+            <br />
+            Here is out featuring products
 			
 		</p>
 		
@@ -61,6 +63,22 @@
 					<div class="preview <?php if ($item->QUAN < 1) echo 'outofstock' ?>">
 					<a href="desc?id=<?php echo $item->ID ?>"  <?php if ($item->QUAN < 1) echo "class='outofstock'"  ?> >
                        <?php echo $item->TITLE; if ($item->QUAN < 1) echo ' (out of stock)'; ?><br>
+                       <img src="/static/images/<?php echo $item->IMGSRC ?>" class="thumb"/>
+                    </a>
+                    </div>
+
+			<?php
+
+				}
+			 ?>
+             
+             Featuring products
+             
+             <?php 
+				foreach($itemsf as $itemf) {  ?>
+					<div class="preview <?php if ($itemf->QUAN < 1) echo 'outofstock' ?>">
+					<a href="desc?id=<?php echo $itemf->ID ?>"  <?php if ($itemf->QUAN < 1) echo "class='outofstock'"  ?> >
+                       <?php echo $itemf->TITLE; if ($itemf->QUAN < 1) echo ' (out of stock)'; ?><br>
                        <img src="/static/images/<?php echo $item->IMGSRC ?>" class="thumb"/>
                     </a>
                     </div>
