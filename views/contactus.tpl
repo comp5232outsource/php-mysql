@@ -22,7 +22,9 @@
           <a class="brand pull-left" href="/"><em><b><?php echo $site_title; ?></b></em></a>
 	  
           <div class="nav-collapse collapse">
-           
+          	<?php
+            	include('nav_menu.php');
+          	?>
           </div><!--/.nav-collapse -->
         </div>
       </div>

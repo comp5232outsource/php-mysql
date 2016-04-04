@@ -57,7 +57,9 @@
           <a class="brand pull-left" href="/"><em><?php echo $site_title; ?></em></a>
 	  
           <div class="nav-collapse collapse">
-           
+          	<?php
+            	include('nav_menu.php');
+          	?>
           </div><!--/.nav-collapse -->
         </div>
       </div>
