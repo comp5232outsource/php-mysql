@@ -11,7 +11,7 @@
  *
  * Place the "static" and "views" directories in the root
  * along with this script and the above .htaccess file.
- */
+ */ 
 
 include('db.php');
 include('vars.php');
