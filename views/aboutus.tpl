@@ -11,7 +11,7 @@
    <link href="/static/ourStyle.css" rel="stylesheet">
 
   <style type="text/css">
-  
+	
   </style>
 </head>
 <body>
@@ -22,9 +22,6 @@
           <a class="brand pull-left" href="/"><em><b><?php echo $site_title; ?></b></em></a>
 	  
           <div class="nav-collapse collapse">
-          <a href="contactus.php">Contact Us</a>
-          &nbsp;&nbsp;&nbsp;
-          <a href="aboutus">About Us</a>
            
           </div><!--/.nav-collapse -->
         </div>
@@ -42,38 +39,16 @@
   
  		<p>
 		
-			Welcome to <?php echo $site_title; ?>! If you would like to purchase an item, please <a href="mailto:webmaster@mycoolstore.com">contact us</a> and we will be happy to help.
+			About Us
 			
 		</p>
 		
 		<p>
-			
-			Check back often for promotional deals and new stock!
-			
+			About us content
 		</p>
-		
-        
-		<div>
-			
 
-			<?php 
-				foreach($items as $item) {  ?>
-					<div class="preview <?php if ($item->QUAN < 1) echo 'outofstock' ?>">
-					<a href="desc?id=<?php echo $item->ID ?>"  <?php if ($item->QUAN < 1) echo "class='outofstock'"  ?> >
-                       <?php echo $item->TITLE; if ($item->QUAN < 1) echo ' (out of stock)'; ?><br>
-                       <img src="/static/images/<?php echo $item->IMGSRC ?>" class="thumb"/>
-                    </a>
-                    </div>
-
-			<?php
-
-				}
-			 ?>
-				
-		</div> 
 		<p style="clear:both"></p>
   
-
  
   </div> <!-- end of the hero-unit-->
   </div> <!-- end of the container-->
