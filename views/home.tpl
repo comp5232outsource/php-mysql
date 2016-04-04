@@ -44,7 +44,7 @@
 		
 			Welcome to <?php echo $site_title; ?>!
             <br />
-            Check details in out Products Catalog for promotional deals and new stock!
+            Check details in our Products Catalog for promotional deals and new stock!
 			
 		</p>
 		
@@ -62,7 +62,7 @@
 					<div class="preview <?php if ($itemf->QUAN < 1) echo 'outofstock' ?>">
 					<a href="desc?id=<?php echo $itemf->ID ?>"  <?php if ($itemf->QUAN < 1) echo "class='outofstock'"  ?> >
                        <?php echo $itemf->TITLE; if ($itemf->QUAN < 1) echo ' (out of stock)'; ?><br>
-                       <img src="/static/images/<?php echo $item->IMGSRC ?>" class="thumb"/>
+                       <img src="/static/images/<?php echo $itemf->IMGSRC ?>" class="thumb"/>
                     </a>
                     </div>
 
