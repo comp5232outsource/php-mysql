@@ -44,35 +44,18 @@
 		
 			Welcome to <?php echo $site_title; ?>!
             <br />
-            Here is out featuring products
+            Check details in out Products Catalog for promotional deals and new stock!
 			
 		</p>
 		
 		<p>
 			
-			Check back often for promotional deals and new stock!
+			Here are our Featuring Products!
 			
 		</p>
 		
         
 		<div>
-			
-
-			<?php 
-				foreach($items as $item) {  ?>
-					<div class="preview <?php if ($item->QUAN < 1) echo 'outofstock' ?>">
-					<a href="desc?id=<?php echo $item->ID ?>"  <?php if ($item->QUAN < 1) echo "class='outofstock'"  ?> >
-                       <?php echo $item->TITLE; if ($item->QUAN < 1) echo ' (out of stock)'; ?><br>
-                       <img src="/static/images/<?php echo $item->IMGSRC ?>" class="thumb"/>
-                    </a>
-                    </div>
-
-			<?php
-
-				}
-			 ?>
-             
-             Featuring products
              
              <?php 
 				foreach($itemsf as $itemf) {  ?>
