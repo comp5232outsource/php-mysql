@@ -11,4 +11,4 @@ The above button will deploy this application to your Bluemix by reading the man
 Add test message
 
 
-Testing conflict issue (2nd commit)
+Testing conflict (1st commit) + Testing conflict issue (2nd commit)
