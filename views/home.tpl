@@ -98,7 +98,7 @@
 		
 		<p>
 			
-			Check back often for promotional deals and new stock!
+			Check back often for promotional deals and new stock! branch b1
 			
 		</p>
 		<p>
