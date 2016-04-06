@@ -36,7 +36,7 @@
   <tr> -->
   <div class="hero-unit">
   <div>
-  <h2 class="text-center"><em><?php echo $site_title; ?></em></h2>
+  <h2 class="text-center"><img src="/static/images/PolyGoodComapny_Logo.jpg" width="600px"></h2>
   </div>
   <br/>
   
