@@ -49,9 +49,11 @@ if (isset($_GET['id'])) {
 	$item = $items[$_GET['id'] - 1];
 }
 
+/*
 if (isset($_GET['id'])) {
 	$itemf = $itemsf[$_GET['id'] - 1];
 }
+*/
 
 if (file_exists("views/$lll_route.tpl")) {
 	ob_start();
