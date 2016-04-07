@@ -114,6 +114,10 @@ app.controller('myCtrl', function($scope) {
     $scope.lastName = "Doe";
     
     $scope.changeRate = function() {
+    	if($scope.exchangeRate == "USD")
+    	{
+    	 	
+    	}
     	alert($scope.exchangeRate);
     }
 });
