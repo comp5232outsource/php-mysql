@@ -9,6 +9,10 @@
    <link href="/static/bootstrap-responsive.css" rel="stylesheet">
    <link href="/static/bootstrap.css" rel="stylesheet">
    <link href="/static/ourStyle.css" rel="stylesheet">
+      <script src="/static/angular.min.js"></script>
+    <script src="/static/jquery.min.js"></script>
+
+
 
   <style type="text/css">
 	body {
@@ -84,6 +88,13 @@
 			<?php echo $item->DESCRIPTION ?>
 		</div>
 		
+		<h3>
+			Exchange Rate: 
+		</h3>
+		
+		<div id="exchangeRate">
+		 <select name="selectExchangeRate"><option label="HKD" value="HKD">HKD</option><option label="USD" value="USD">USD</option><option label="HKD" value="JPY">JPY</option></select>
+		</div>		
 		<h3>
 			Price: 
 		</h3>
