@@ -42,7 +42,7 @@
   
  		<p>
 		
-			Welcome to <?php echo $site_title; ?>! If you would like to purchase an item, please <a href="mailto:webmaster@mycoolstore.com">contact us</a> and we will be happy to help.
+			Welcome to <?php echo $site_title; ?>! If you would like to purchase an item, please <a href="./contactus">contact us</a> and we will be happy to help.
 			
 		</p>
 		
