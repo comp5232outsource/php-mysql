@@ -112,6 +112,7 @@ var app = angular.module('myApp', []);
 app.controller('myCtrl', function($scope, $http) {
   
     $scope.exchangeRate = "HKD";
+    $scope.price = <?php echo $item->PRICE ?>;
     
     $scope.changeRate = function() {
     	if($scope.exchangeRate == "USD")
