@@ -66,7 +66,7 @@
                     </tr>
                     <tr>
                     	<td valign="top"><label for="comments">Comments *</label></td>
-                        <td valign="top"><textarea  name="comments" maxlength="1000" cols="30" rows="6"></textarea></td>
+                        <td valign="top"><textarea  name="comments" maxlength="1000" cols="80" rows="6"></textarea></td>
                     </tr>
                     <tr>
                     	<td colspan="2" style="text-align:center"><input type="submit" value="Submit"></td>
