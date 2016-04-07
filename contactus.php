@@ -8,58 +8,9 @@
    <link href="/static/bootstrap.min.css" rel="stylesheet" media="screen">
    <link href="/static/bootstrap-responsive.css" rel="stylesheet">
    <link href="/static/bootstrap.css" rel="stylesheet">
+   <link href="/static/ourStyle.css" rel="stylesheet">
 
   <style type="text/css">
-	body {
-        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
-	
-      }
-  .preview {
-  	float: left;
-	margin-right: 20px;
-  }    
-  .preview .thumb {
-    border: 0 none;
-    margin-top: 5px;
-    width: 252px;
-  }
-    .outofstock {
-  	background-color: red;
-  	pointer-events: none;
-   	cursor: default;
-  }
-  a.outofstock {
-   color: white;
-  }
-	
-	
-	/* Custom container */
-      .container-narrow {
-        margin: 0 auto;
-        max-width: 900px;
-	border-style: solid;
-	border-color: transparent;
-	background-color: #D8D8D8	;
-	z-index: 9;
-	height : 100%;
-	-moz-border-radius: 15px;
-	border-radius: 15px;
-	
-      }
-      .container-narrow > hr {
-        margin: 30px 0;
-      }
-	.sidebar-nav {
-        padding: 20px 0;
-      }
-      @media (max-width: 980px) {
-        /* Enable use of floated navbar text */
-        .navbar-text.pull-right {
-          float: none;
-          padding-left: 5px;
-          padding-right: 5px;
-        }
-       
 	
   </style>
 </head>
@@ -68,7 +19,7 @@
       <div class="navbar-inner">
         <div class="container">
           
-          <a class="brand pull-left" href="/"><em><b>Poly Good Company Limited</b></em></a>
+          <a class="brand pull-left" href="/"><em><b><?php echo $site_title; ?></b></em></a>
 	  
           <div class="nav-collapse collapse">
            

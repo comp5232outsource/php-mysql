@@ -11,7 +11,7 @@
    <link href="/static/ourStyle.css" rel="stylesheet">
 
   <style type="text/css">
-  
+	
   </style>
 </head>
 <body>
@@ -25,7 +25,6 @@
           	<?php
             	include('nav_menu.php');
           	?>
-           
           </div><!--/.nav-collapse -->
         </div>
       </div>
@@ -36,45 +35,31 @@
   <tr> -->
   <div class="hero-unit">
   <div>
-  <h2 class="text-center"><img src="/static/images/PolyGoodComapny_Logo.jpg" width="600px"></h2>
+  <h2 class="text-center"><em><?php echo $site_title; ?></em></h2>
   </div>
   <br/>
   
  		<p>
 		
-			Welcome to <?php echo $site_title; ?>!
-            <br />
-            Check details in our Products Catalog for promotional deals and new stock!
+			About Us
 			
 		</p>
 		
 		<p>
-			
-			Here are our Featuring Products!
-			
+			Poly Good Company Limited is an O2O (Online to Offline) store in Hong Kong.
+            <br/>
+            You can view our lastest products in our website. And the prices of products will be shown on our website.
+            <br/>
+            Different special promotions are frequently announced on Poly Good Company Limited.
+            <br/>
+            If you have any questions, please feel free to contact us.
 		</p>
-		
-        
-		<div>
-             
-             <?php 
-				foreach($itemsf as $itemf) {  ?>
-					<div class="preview <?php if ($itemf->QUAN < 1) echo 'outofstock' ?>">
-					<a href="desc?id=<?php echo $itemf->ID ?>"  <?php if ($itemf->QUAN < 1) echo "class='outofstock'"  ?> >
-                       <?php echo $itemf->TITLE; if ($itemf->QUAN < 1) echo ' (out of stock)'; ?><br>
-                       <img src="/static/images/<?php echo $itemf->IMGSRC ?>" class="thumb"/>
-                    </a>
-                    </div>
 
-			<?php
-
-				}
-			 ?>
-				
-		</div> 
 		<p style="clear:both"></p>
+		<p>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1845.6536501690593!2d114.18058566743694!3d22.304214952571062!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2shk!4v1460010028571" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+		</p>
   
-
  
   </div> <!-- end of the hero-unit-->
   </div> <!-- end of the container-->

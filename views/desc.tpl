@@ -8,6 +8,11 @@
    <link href="/static/bootstrap.min.css" rel="stylesheet" media="screen">
    <link href="/static/bootstrap-responsive.css" rel="stylesheet">
    <link href="/static/bootstrap.css" rel="stylesheet">
+   <link href="/static/ourStyle.css" rel="stylesheet">
+      <script src="/static/angular.min.js"></script>
+    <script src="/static/jquery.min.js"></script>
+
+
 
   <style type="text/css">
 	body {
@@ -57,7 +62,9 @@
           <a class="brand pull-left" href="/"><em><?php echo $site_title; ?></em></a>
 	  
           <div class="nav-collapse collapse">
-           
+          	<?php
+            	include('nav_menu.php');
+          	?>
           </div><!--/.nav-collapse -->
         </div>
       </div>
@@ -82,6 +89,14 @@
 		</div>
 		
 		<h3>
+			Exchange Rate: 
+		</h3>
+		<div ng-app="myApp" ng-controller="myCtrl">
+		<div id="exchangeRate">
+		 <select name="selectExchangeRate" ng-Value="exchangeRate" ng-change="changeRate()" ><option label="HKD" value="HKD">HKD</option><option label="USD" value="USD">USD</option><option label="JPY" value="JPY">JPY</option></select>
+		</div>
+		</div>
+		<h3>
 			Price: 
 		</h3>
 		
@@ -92,6 +107,16 @@
  
   </div> <!-- end of the hero-unit-->
   </div> <!-- end of the container-->
-  
+  <script>
+var app = angular.module('myApp', []);
+app.controller('myCtrl', function($scope) {
+    $scope.firstName = "John";
+    $scope.lastName = "Doe";
+    
+    $scope.changeRate = function() {
+    	alert($scope.exchangeRate);
+    }
+});
+</script>
 </body>
 </html>
