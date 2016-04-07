@@ -109,7 +109,7 @@
   </div> <!-- end of the container-->
   <script>
 var app = angular.module('myApp', []);
-app.controller('myCtrl', function($scope) {
+app.controller('myCtrl', function($scope, $http) {
   
     $scope.exchangeRate = "HKD";
     
