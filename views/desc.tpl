@@ -91,10 +91,11 @@
 		<h3>
 			Exchange Rate: 
 		</h3>
-		
+		<div ng-app="myApp" ng-controller="myCtrl">
 		<div id="exchangeRate">
-		 <select name="selectExchangeRate"><option label="HKD" value="HKD">HKD</option><option label="USD" value="USD">USD</option><option label="HKD" value="JPY">JPY</option></select>
-		</div>		
+		 <select name="selectExchangeRate" ng-Value="exchangeRate" ng-change="changeRate()" ><option label="HKD" value="HKD">HKD</option><option label="USD" value="USD">USD</option><option label="JPY" value="JPY">JPY</option></select>
+		</div>
+		</div>
 		<h3>
 			Price: 
 		</h3>
@@ -106,6 +107,16 @@
  
   </div> <!-- end of the hero-unit-->
   </div> <!-- end of the container-->
-  
+  <script>
+var app = angular.module('myApp', []);
+app.controller('myCtrl', function($scope) {
+    $scope.firstName = "John";
+    $scope.lastName = "Doe";
+    
+    $scope.changeRate = function() {
+    	alert($scope.exchangeRate);
+    }
+});
+</script>
 </body>
 </html>
