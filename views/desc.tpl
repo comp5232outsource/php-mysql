@@ -110,8 +110,8 @@
   <script>
 var app = angular.module('myApp', []);
 app.controller('myCtrl', function($scope) {
-    $scope.firstName = "John";
-    $scope.lastName = "Doe";
+  
+    $scope.exchangeRate = "HKD";
     
     $scope.changeRate = function() {
     	if($scope.exchangeRate == "USD")
