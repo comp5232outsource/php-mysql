@@ -130,7 +130,7 @@ app.controller('myCtrl', function($scope, $http) {
 		    //your code when fails
 		});
 
-	  }
+	  
     	}
     	alert($scope.exchangeRate);
     }
