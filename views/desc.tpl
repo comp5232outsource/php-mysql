@@ -77,7 +77,7 @@
   <h2><em><?php echo $item->TITLE   ?></em><h2> </div>
   <br/>
   
-		<img src="/static/images/<?php echo $item->IMGSRC ?>" width="600"  class="sale-photo">
+		<img src="/static/images/<?php echo $item->IMGSRC ?>" width="400"  class="sale-photo">
 	
 		<h3>
 			Description:
@@ -99,7 +99,7 @@
 			Price: 
 		</h3>
 		
-		<div id="price">{{price | number:2}}</div>
+		<div id="price">{{finalprice | number:2}}</div>
 			</div>
 
   
@@ -115,15 +115,20 @@ app.controller('myCtrl', function($scope, $http) {
   
     $scope.exchangeRate = "HKD";
     $scope.price = <?php echo $item->PRICE ?>;
+    $scope.finalprice = <?php echo $item->PRICE ?>;
     
     $scope.changeRate = function() {
     	if($scope.exchangeRate == "USD")
     	{
-    	 $scope.price =  $scope.price / 7.75;
+    	 $scope.finalprice =  $scope.price / 7.75;
     	}
     	else if($scope.exchangeRate == "JPY")
     	{
-    	 $scope.price =  $scope.price * 13.96;
+    	 $scope.finalprice =  $scope.price * 13.96;
+    	}
+    	else
+    	{
+    	 $scope.finalprice =  $scope.price;
     	}
     
     }
