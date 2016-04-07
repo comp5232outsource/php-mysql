@@ -109,11 +109,6 @@
   <script>
 var app = angular.module('myApp', []);
 
-app.run(function ($http) {
-
-  $http.defaults.headers.common['Access-Control-Allow-Origin'] = '*';
-
-});
 
 app.controller('myCtrl', function($scope, $http) {
   
@@ -126,7 +121,13 @@ app.controller('myCtrl', function($scope, $http) {
     		var url = "http://api.fixer.io/latest?symbols=USD&base=HKD";
 		$http({
 		    method: 'GET',
-		    url: url
+		    url: url,
+		    headers:{
+                'Access-Control-Allow-Origin': '*',
+                'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, OPTIONS',
+                'Access-Control-Allow-Headers': 'Content-Type, X-Requested-With',
+                
+            }
 		}).
 		success(function(status) {
 		  $scope.rate = response.data.rates.USD;
