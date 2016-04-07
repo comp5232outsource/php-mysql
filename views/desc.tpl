@@ -77,7 +77,7 @@
   <h2><em><?php echo $item->TITLE   ?></em><h2> </div>
   <br/>
   
-		<img src="/static/images/<?php echo $item->IMGSRC ?>" class="sale-photo">
+		<img src="/static/images/<?php echo $item->IMGSRC ?>" width="600"  class="sale-photo">
 	
 		<h3>
 			Description:
