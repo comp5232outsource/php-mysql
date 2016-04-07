@@ -121,6 +121,7 @@ app.controller('myCtrl', function($scope, $http) {
     		var url = "http://api.fixer.io/latest?symbols=USD&base=HKD";
 		$http({
 		    method: 'JSONP',
+		     contentType: "application/json",
 		    url: url
 		}).
 		success(function(status) {
