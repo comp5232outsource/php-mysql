@@ -123,7 +123,7 @@ app.controller('myCtrl', function($scope, $http) {
     	}
     	else if($scope.exchangeRate == "JPY")
     	{
-    	 $scope.price =  $scope.price * 6.9;
+    	 $scope.price =  $scope.price * 13.96;
     	}
     	alert($scope.exchangeRate);
     }
