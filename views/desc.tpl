@@ -94,12 +94,13 @@
 		<div id="exchangeRate">
 		 <select name="selectExchangeRate" ng-model="exchangeRate" ng-change="changeRate()" ><option label="HKD" value="HKD">HKD</option><option label="USD" value="USD">USD</option><option label="JPY" value="JPY">JPY</option></select>
 		</div>
-		</div>
+	
 		<h3>
 			Price: 
 		</h3>
 		
-		<div id="price"><?php echo $item->PRICE ?>.00</div>
+		<div id="price">{{price}}</div>
+			</div>
 
   
 
@@ -118,21 +119,11 @@ app.controller('myCtrl', function($scope, $http) {
     $scope.changeRate = function() {
     	if($scope.exchangeRate == "USD")
     	{
-    		var url = "http://api.fixer.io/latest?symbols=USD&base=HKD";
-		$http({
-		    method: 'JSONP',
-		     contentType: "application/json",
-		    url: url
-		}).
-		success(function(status) {
-		  $scope.rate = response.data.rates.USD;
-		  alert($scope.rate );
-		}).
-		error(function(status) {
-		    //your code when fails
-		});
-
-	  
+    	 $scope.price =  $scope.price / 7.75;
+    	}
+    	else if($scope.exchangeRate == "JPY")
+    	{
+    	 $scope.price =  $scope.price * 6.9;
     	}
     	alert($scope.exchangeRate);
     }
