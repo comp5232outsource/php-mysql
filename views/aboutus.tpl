@@ -57,7 +57,7 @@
 
 		<p style="clear:both"></p>
 		<p>
-			<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1845.6536501690593!2d114.18058566743694!3d22.304214952571062!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2shk!4v1460010028571" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+<iframe src="https://www.google.com/maps/embed?pb=!1m21!1m12!1m3!1d3691.3004160597834!2d114.17813338786846!3d22.30447543955571!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m6!3e6!4m3!3m2!1d22.303865!2d114.18047229999999!4m0!5e0!3m2!1szh-TW!2shk!4v1460036822824" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 		</p>
   
  
