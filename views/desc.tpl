@@ -99,7 +99,7 @@
 			Price: 
 		</h3>
 		
-		<div id="price">{{price}}</div>
+		<div id="price">{{price | number:2}}</div>
 			</div>
 
   
@@ -125,7 +125,7 @@ app.controller('myCtrl', function($scope, $http) {
     	{
     	 $scope.price =  $scope.price * 13.96;
     	}
-    	alert($scope.exchangeRate);
+    
     }
 });
 </script>
