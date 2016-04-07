@@ -93,7 +93,7 @@
 		</h3>
 		<div ng-app="myApp" ng-controller="myCtrl">
 		<div id="exchangeRate">
-		 <select name="selectExchangeRate" ng-value="exchangeRate" ng-change="changeRate()" ><option label="HKD" value="HKD">HKD</option><option label="USD" value="USD">USD</option><option label="JPY" value="JPY">JPY</option></select>
+		 <select name="selectExchangeRate" ng-model="exchangeRate" ng-change="changeRate()" ><option label="HKD" value="HKD">HKD</option><option label="USD" value="USD">USD</option><option label="JPY" value="JPY">JPY</option></select>
 		</div>
 		</div>
 		<h3>
