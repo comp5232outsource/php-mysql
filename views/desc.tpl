@@ -12,9 +12,6 @@
       <script src="/static/angular.min.js"></script>
     <script src="/static/jquery.min.js"></script>
 
-<?php
-header("Access-Control-Allow-Origin: *");
-?>
 
   <style type="text/css">
 	body {
@@ -111,6 +108,14 @@ header("Access-Control-Allow-Origin: *");
   </div> <!-- end of the container-->
   <script>
 var app = angular.module('myApp', []);
+
+app.run(function ($http) {
+  // Sends this header with any AJAX request
+  $http.defaults.headers.common['Access-Control-Allow-Origin'] = '*';
+  // Send this header only in post requests. Specifies you are sending a JSON object
+  $http.defaults.headers.post['dataType'] = 'json'
+});
+
 app.controller('myCtrl', function($scope, $http) {
   
     $scope.exchangeRate = "HKD";
