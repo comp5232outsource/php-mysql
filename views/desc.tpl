@@ -116,7 +116,7 @@ app.controller('myCtrl', function($scope) {
     $scope.changeRate = function() {
     	if($scope.exchangeRate == "USD")
     	{
-    	 	alert($scope.exchangeRate);
+    	 alert($scope.exchangeRate);
     	}
     	alert($scope.exchangeRate);
     }
