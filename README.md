@@ -12,3 +12,4 @@ Add test message
 
 
 Testing conflict (1st commit) + Testing conflict issue (2nd commit)
+Test
