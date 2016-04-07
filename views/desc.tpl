@@ -12,7 +12,9 @@
       <script src="/static/angular.min.js"></script>
     <script src="/static/jquery.min.js"></script>
 
-
+<?php
+header("Access-Control-Allow-Origin: *");
+?>
 
   <style type="text/css">
 	body {
@@ -119,7 +121,7 @@ app.controller('myCtrl', function($scope, $http) {
     	{
     		var url = "http://api.fixer.io/latest?symbols=USD&base=HKD";
 		$http({
-		    method: 'JSONP',
+		    method: 'GET',
 		    url: url
 		}).
 		success(function(status) {
