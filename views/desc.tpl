@@ -116,11 +116,20 @@ app.controller('myCtrl', function($scope, $http) {
     $scope.changeRate = function() {
     	if($scope.exchangeRate == "USD")
     	{
-    	  $http.get("http://api.fixer.io/latest?symbols=USD&base=HKD")
-		    .then(function(response) {
-		        $scope.rate = response.data.rates.USD;
-		        	alert($scope.rate );
-	  });
+    		var url = "http://api.fixer.io/latest?symbols=USD&base=HKD";
+		$http({
+		    method: 'JSONP',
+		    url: url
+		}).
+		success(function(status) {
+		  $scope.rate = response.data.rates.USD;
+		  alert($scope.rate );
+		}).
+		error(function(status) {
+		    //your code when fails
+		});
+
+	  }
     	}
     	alert($scope.exchangeRate);
     }
