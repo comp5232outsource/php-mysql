@@ -120,14 +120,8 @@ app.controller('myCtrl', function($scope, $http) {
     	{
     		var url = "http://api.fixer.io/latest?symbols=USD&base=HKD";
 		$http({
-		    method: 'GET',
-		    url: url,
-		    headers:{
-                'Access-Control-Allow-Origin': '*',
-                'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, OPTIONS',
-                'Access-Control-Allow-Headers': 'Content-Type, X-Requested-With'
-                
-            }
+		    method: 'JSONP',
+		    url: url
 		}).
 		success(function(status) {
 		  $scope.rate = response.data.rates.USD;
