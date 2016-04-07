@@ -116,7 +116,11 @@ app.controller('myCtrl', function($scope) {
     $scope.changeRate = function() {
     	if($scope.exchangeRate == "USD")
     	{
-    	 alert($scope.exchangeRate);
+    	  $http.get("http://api.fixer.io/latest?symbols=USD&base=HKD")
+		    .then(function(response) {
+		        $scope.rate = response.data.rates.USD;
+		        	alert($scope.rate );
+	  });
     	}
     	alert($scope.exchangeRate);
     }
