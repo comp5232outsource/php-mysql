@@ -48,10 +48,12 @@
 		<p>
 			Poly Good Company Limited is an O2O (Online to Offline) store in Hong Kong.
             <br/>
-            You can view our lastest products in our website. And the prices of products will be shown on our website.
-            <br/>
-            Different special promotions are frequently announced on Poly Good Company Limited.
-            <br/>
+            Polyu Good Company Limited is found on 2002. This company is fully owned by The Hong Kong Polytechnic University and sell smart devices. We employed more than 200 staff and 1,000 customers in the world. 
+            
+            Our company has a strong development and production team to design very innovative smart devices for our customers.
+            
+            
+            
             If you have any questions, please feel free to contact us.
 		</p>
 
